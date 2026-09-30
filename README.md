@@ -1,46 +1,59 @@
-# 🧮 BMI Calculator – BlueJ Project
+# 🧮 BMI Calculator
 
-A simple Java console application developed using BlueJ. It calculates **Body Mass Index (BMI)** and **Total Body Water (TBW)**, provides health summaries, and makes basic recommendations. This project was created as part of preparation for the **Java SE 8 OCA certification**.
+A Java console application that calculates **Body Mass Index (BMI)**, **Total Body Water (TBW)** and **Basal Metabolic Rate (BMR)**, then prints a personal health summary. I built it while preparing for the **Oracle Java SE 8 (OCA)** certification.
 
----
-
-## 📁 Project Structure
-
-- `BMICal.java` – Main class that handles all logic for BMI, TBW, and user interaction  
-- `package.bluej` – BlueJ configuration file for managing the project environment
+`Java` `Console I/O` `BlueJ`
 
 ---
 
 ## ✅ Features
 
-- Collects user details: name, surname, age, gender
-- BMI calculation (metric and imperial)
-- Determines BMI category (underweight, normal, overweight, etc.)
-- Calculates Total Body Water (TBW)
-- Displays a health summary
-- Clean separation into methods like `bmiProgram()` and `tbwProgram()`
-- Input validation for unit types and personal data
+- **BMI** in metric (kg and m) or imperial (lb and in), with a BMI category
+- **Realistic-range checks** on height and weight, re-prompting when a value looks wrong
+- **Total Body Water** using separate formulas for men and women
+- **Basal Metabolic Rate** (Mifflin-St Jeor equation): the calories your body needs at rest
+- **Summary** of name, gender, age, unit system, BMI, category and TBW
+- Each calculator can be re-run without restarting the program
 
 ---
-## 🖼️ Output Preview
 
-Below is an example of what the console output looks like when running the BMI Calculator:
+## 🖼️ Output preview
 
- <img width="1920" height="1080" alt="Screenshot 2025-07-11 141911" src="https://github.com/user-attachments/assets/ed0e579b-be5f-4ae0-a742-0e66e04e413f" />
+<img width="1920" height="1080" alt="BMI Calculator console output" src="https://github.com/user-attachments/assets/ed0e579b-be5f-4ae0-a742-0e66e04e413f" />
 
+---
 
-## 🔧 How to Run
+## 📁 Project structure
 
-### 📘 Using BlueJ
+| File | Purpose |
+|---|---|
+| `BMICal.java` | All program logic: `bmiProgram()`, `tbwProgram()`, `BasalMR()`, `summary()` and input validation |
+| `package.bluej`, `README.TXT` | BlueJ project files |
 
-1. Open **BlueJ**
-2. Go to **Project > Open Project...**
-3. Select the folder containing this project (`BMICal.java` and `package.bluej`)
-4. Right-click on the `BMICal` class
-5. Select `void main(String[] args)` to run
+---
 
-### 💻 Using Terminal (Optional)
+## 🔧 How to run
+
+**Terminal**
 
 ```bash
 javac BMICal.java
 java BMICal
+```
+
+**BlueJ:** open the project folder, right-click `BMICal`, then choose `void main(String[] args)`.
+
+---
+
+## 🧠 What I practised
+
+- Breaking a program into focused static methods
+- Input validation loops with `do-while`
+- Formatting numeric output with `String.format`
+- Applying real-world formulas in code
+
+---
+
+## 👩🏾‍💻 Author
+
+**Sharon Galela** · [LinkedIn](https://www.linkedin.com/in/sharon-galela-6998bb265) · [GitHub](https://github.com/ShariieG)
